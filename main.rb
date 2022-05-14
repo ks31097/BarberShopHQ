@@ -14,5 +14,5 @@ end
 set :port, 1234
 
 get '/' do
-  erb "Welcome to the BarberShop!"
+  erb :index
 end
