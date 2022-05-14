@@ -14,5 +14,6 @@ end
 set :port, 1234
 
 get '/' do
+  @barbers = Barber.order "created_at DESC"
   erb :index
 end
