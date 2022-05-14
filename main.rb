@@ -7,6 +7,10 @@ set :database, {adapter: "sqlite3", database: "barbershop.db"}
 
 class Client < ActiveRecord::Base
 end
+
+class Barber < ActiveRecord::Base
+end
+
 set :port, 1234
 
 get '/' do
