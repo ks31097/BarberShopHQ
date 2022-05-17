@@ -30,6 +30,11 @@ get '/barber/:id' do
   erb :barber
 end
 
+get '/bookings' do
+  @clients = Client.order("created_at DESC")
+  erb :bookings
+end
+
 get '/visit' do
   @c = Client.new
   erb :visit
