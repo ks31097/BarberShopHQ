@@ -40,8 +40,12 @@
     </nav>
 
     <div>
+      <%if @error then %>
+          <div class="alert alert-danger" role="alert"><%=@error%></div>
+      <% end %>
       <%= yield %>
     </div>
+
   </div>
   </body>
 </html>
